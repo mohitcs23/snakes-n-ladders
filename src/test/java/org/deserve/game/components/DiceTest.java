@@ -9,7 +9,7 @@ import java.util.Set;
 public class DiceTest {
 
   @Test
-  public void test_rollDice() {
+  public void testRollDice() {
 
     int[] diceFaces = {1, 2, 3, 4, 5, 6};
     Set<Integer> possibleResults = new HashSet<Integer>();
