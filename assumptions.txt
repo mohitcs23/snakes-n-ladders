@@ -1,0 +1,4 @@
+Snakes and Ladders - Assumptions
+
+- There won’t be multiple snakes or ladders at any number.
+- Snakes and Ladders won't form a loop.
