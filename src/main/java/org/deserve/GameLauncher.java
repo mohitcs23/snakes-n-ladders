@@ -27,6 +27,15 @@ public class GameLauncher {
     for (int i = 0; i < 10; i++) {
       game.play(player1, dice.rollDice());
     }
+
+    diceFaces = new int[] {2, 4, 6};
+    Dice crookedDice = new Dice(diceFaces);
+
+    Player player2 = new Player("player 2");
+
+    for (int i = 0; i < 10; i++) {
+      game.play(player2, crookedDice.rollDice());
+    }
   }
 
   private static Movable createLadders() {
