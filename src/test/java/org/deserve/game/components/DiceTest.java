@@ -12,12 +12,14 @@ public class DiceTest {
   public void testRollDice() {
 
     int[] diceFaces = {1, 2, 3, 4, 5, 6};
-    Set<Integer> possibleResults = new HashSet<Integer>();
+    Set<Integer> possibleResults = new HashSet();
     for (int face : diceFaces) {
       possibleResults.add(face);
     }
     Dice dice = new Dice(diceFaces);
 
-    Assert.assertTrue(possibleResults.contains(dice.rollDice()));
+    for (int i = 0; i < 6; i++) {
+      Assert.assertTrue(possibleResults.contains(dice.rollDice()));
+    }
   }
 }
